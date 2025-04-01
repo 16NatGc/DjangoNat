@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Nataly Gonzalez</h2>   
+        <p>Nacida en EDOMEX,  estudiante de la UTVT y egresada del Colegio Nacional de Educación Profesional Técnica en Informática</p>
+        <p>Actualmente soy estudiantede de la Universidad Tecnologica del Valle de Toluca contando con una Carrera Profesional Tecnico Bachiller en Infromatica, trabaje un año en el Instituto Municipal de Cultura Física y Deporte de Lerma en la creacion de un sistema web.
+</div>
+{% endblock %}
